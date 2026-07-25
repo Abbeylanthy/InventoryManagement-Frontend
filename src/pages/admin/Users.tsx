@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useUsers } from "../../hooks/useUsers";
 import ViewUserModal from "../../components/users/ViewUserModal";
 import CreateUserModal from "../../components/users/CreateUserModal";
-import UpdateUserModal from "../../components/users/UpdateUserModal";
 import { useDeactivateUser } from "../../hooks/useToggleUserStatus";
 
 export default function Users() {
@@ -13,10 +12,6 @@ export default function Users() {
   const [openViewModal, setOpenViewModal] = useState(false);
 
   const [openCreateModal, setOpenCreateModal] = useState(false);
-
-  const [openUpdateModal, setOpenUpdateModal] = useState(false);
-
-  const [selectedUserForUpdate, setSelectedUserForUpdate] = useState<any>(null);
 
   const [selectedUser, setSelectedUser] = useState<number | null>(null);
 
@@ -280,11 +275,7 @@ export default function Users() {
   onClose={() => setOpenCreateModal(false)}
 />
 
-<UpdateUserModal
-open={openUpdateModal}
-user={selectedUserForUpdate}
-onClose={() => setOpenUpdateModal(false)}
-/>
+
 
 </div>
   );

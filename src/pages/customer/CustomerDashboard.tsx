@@ -1,4 +1,4 @@
-import { ShoppingBag, ShoppingCart, PackageCheck, Wallet } from "lucide-react";
+import { ShoppingBag, ShoppingCart, PackageCheck} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { Eye, EyeOff } from "lucide-react";
