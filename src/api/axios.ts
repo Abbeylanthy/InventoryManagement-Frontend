@@ -1,9 +1,9 @@
 import axios from "axios";
 
-console.log("API URL:", import.meta.env.VITE_API_BASE_URL);
-
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: import.meta.env.PROD
+    ? "https://inventorymanagement-api-abbey-cgfzgggcbbhedra7.centralus-01.azurewebsites.net/api"
+    : "http://localhost:5098/api",
   headers: {
     "Content-Type": "application/json",
   },
