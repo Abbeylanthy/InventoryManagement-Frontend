@@ -33,8 +33,8 @@ const inventory = [
 
 const finance = [
   { name: "Payments", icon: CreditCard, path: "/payments", permission: "ViewPayments", },
-  { name: " Wallets", icon: Wallet, path: "/wallets", permission: "ViewWallets", },
-  { name: " Withdrawals", icon: Wallet, path: "/withdrawals" },
+  { name: "Wallets", icon: Wallet, path: "/wallets", permission: "ViewWallets", },
+  { name: "Withdrawals", icon: Wallet, path: "/withdrawals" },
 ];
 
 const administration = [
